@@ -1,0 +1,112 @@
+:root {
+    --height: 100vh;
+    --main-color: #F0E9DC;
+    --secondary-color: #484E5E;
+    --main-bg: #FEFFFA;
+    --secondary-bg: #FFE7D3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
+    max-width: calc(var(--height) / 1.41);
+    min-height: var(--height);
+    display: flex;
+    border: 1px solid #000;
+}
+
+aside {
+    max-width: 35%;
+    background-color: #484E5E;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px;
+}
+
+aside img {
+    border-radius: 1000px;
+    height: 220px;
+    margin: 30px;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.subtitle {
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: var(--main-color);
+}
+
+.separator {
+    width: 100%;
+    height: 3px;
+    margin: 40px;
+    background-color: var(--main-color);
+
+}
+
+.article-container {
+    margin-bottom: 40px;
+}
+
+.article-title {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.article-text {
+    font-weight: 200;
+    color: var(--main-color);
+    font-size: .7rem;
+}
+
+.main-section {
+    background-color: var(--main-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    padding: 20px 0px;
+}
+
+.main-section article {
+    width: 80%;
+}
+
+.header-section {
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: var(--secondary-bg);
+    font-weight: bolder;
+    color: var(--secondary-color);
+    margin: 20px 0px;
+}
+
+.title-section {
+    color: var(--secondary-color);
+    margin: 10px 0px;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.subtitle-section {
+    color: var(--secondary-color);
+    margin: 7px 0px;
+    font-weight: 600;
+    font-size: 1.1rem;
+
+}
