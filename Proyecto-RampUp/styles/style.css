@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;1,700&display=swap");
 
 /*
 MediaQueries:
@@ -16,207 +16,265 @@ MediaQueries:
     PC de escritorio grande: 1920 x 1080 px.
 */
 
+/* Declarando las variables globales */
+
 :root {
-    --primary-black: #0d0d0d;
-    --primary-blue: rgb(64, 97, 242);
-    --main-padding: 40px 20px;
+  --primary-black: #0d0d0d;
+  --primary-blue: #6680F4;
+  --secondary-orange: #fc814a;
+  --primary-white: #E8E8E8;
+  --light-gray: #BFBFBF;
+  --darker-gray: #96939b;
+  --main-padding: 40px 20px;
 }
 
 /* Reset de los estilos */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Estilos del header */
 
 header {
-    width: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    border-bottom: 1px solid lightgray;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
 }
 
 header nav {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
 header nav a {
-    text-decoration: none;
-    transition: all 0.3s ease;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 nav a:link {
-    color: var(--primary-black);
-}
-nav a:visited {
-    color: var(--primary-black)
-}
-nav a:hover {
-    color: rgb(182, 182, 182);
+  color: var(--primary-black);
 }
 
+nav a:visited {
+  color: var(--primary-black);
+}
+
+nav a:hover {
+  color: rgb(182, 182, 182);
+}
+
+.title {
+  font-size: 10vw;
+}
+
+/* Estilos del hero-section */
+
 .hero-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    line-height: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  line-height: 10vw;
 }
 
 .hero-section h2 {
-    font-size: 10vw;
+  font-size: 7vw;
 }
 
 .hero-section span {
-    font-size: 4vw;
+  font-size: 4vw;
 }
 
 .hero-section .nombre {
-    color: var(--primary-blue);
-    display: block;
-    font-size: 11vw;
-    font-family: 'Lobster', sans-serif;
+  color: var(--primary-blue);
+  display: block;
+  font-size: 11vw;
+  font-family: "Lobster", sans-serif;
 }
 
 .aboutme {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;    
-    gap: 20px;
-    background-color: aqua;
-    padding: 30px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: aqua;
+  padding: 30px 20px;
 }
 
-
 .aboutme-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-weight: 400;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 400;
+  gap: 20px;
 }
 
 .aboutme-info img {
-    width: 65vw;
-    border-radius: 1000px;
+  width: 65vw;
+  border-radius: 1000px;
 }
 
 .portfolio {
-    min-height: 100%;
-    background-color: red;
-    display: flex;
-    gap: 30px;
-    padding: 30px 20px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  min-height: 100vh;
+  background-color: red;
+  display: flex;
+  gap: 30px;
+  padding: 30px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .projects {
-    width: 90%;
-    display: grid;
-    place-content: center;
-    gap: 30px;
-    grid-template-rows:minmax(200px, 1fr);
+  display: grid;
+  gap: 30px;
+  grid-template-rows: minmax(200px, 1fr);
 }
 
 .projects article {
-    display: flex;
-        justify-content: center;
-        align-items: center;
-        min-width: 90vw;
-        min-height: 300px;
-    background-color: wheat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 80vw;
+  background-color: var(--primary-white);
+  border-radius: 20px;
+}
+
+article img {
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+article .project-info {
+  border-top: 2px solid var(--darker-gray);
+  border-radius: 0px 0px 20px 20px;
+  width: 100%;
+  min-height: 70px;
+  background-color: var(--primary-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 425px) {
-    .aboutme-info img {
-        height: 50vw;
-        width: 50vw;
-    }
-    .hero-section {
-        line-height: 9vw;
-    }
+  .hero-section {
+    line-height: 9vw;
+  }
+
+  .hero-section h2 {
+    font-size: 8vw;
+  }
+
+  .aboutme-info img {
+    height: 30vw;
+    width: 30vw;
+  }
+
+
+  .projects article {
+    max-width: 75vw;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .aboutme-info img {
-        height: 60vw;
-        width: 60vw;
-    }
+  .hero-section {
+    line-height: 5vw;
+  }
 
-    .aboutme-info p {
-        font-size: 3vw;
-    }
-    .hero-section {
-        line-height: 10vw;
-    }
+  .hero-section h2 {
+    font-size: 6vw;
+  }
 
-    .projects{
-        grid-template-columns: repeat(2,1fr);
-    }
+  .hero-section .nombre {
+    font-size: 6vw;
+    display: inline;
+  }
 
-    .projects article {
-        min-width: 45vw;
-    }
+  .hero-section span {
+    font-size: 3vw;
+  }
+
+  .aboutme-info img {
+    height: 60vw;
+    width: 60vw;
+  }
+
+  .aboutme-info p {
+    font-size: 3vw;
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects article {
+    max-width: 40vw;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    .hero-section {
-        line-height: 4vw;
-    }
-    .hero-section h2 {
-        font-size: 4vw;
-    }
-    .hero-section span{
-        font-size: 1.5vw;
-    }
-    .hero-section .nombre {
-        font-size: 4vw;
-        display: inline;
-    }
-    
-    .aboutme h2 {
-        font-size: 3vw;
-    }
+  .hero-section {
+    line-height: 4vw;
+  }
 
-    .aboutme-info{
-        padding: 100px 0px;
-        width: 80%;
-        flex-direction: row;
-        gap: 50px;
-    }
+  .hero-section h2 {
+    font-size: 4vw;
+  }
 
-    .aboutme-info img {
-        height: 15vw;
-    }
+  .hero-section span {
+    font-size: 1.5vw;
+  }
 
-    .aboutme-info p {
-        line-height: 20px;
-        text-align: left;
-        font-size: 1.3vw;
-    }
+  .hero-section .nombre {
+    font-size: 4vw;
+    display: inline;
+  }
 
-    .projects {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .aboutme h2 {
+    font-size: 3vw;
+  }
 
-    .projects article {
-        min-width: 30vw;
-        min-height: 30vw;
-    }
+  .aboutme-info {
+    padding: 100px 0px;
+    width: 80%;
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .aboutme-info img {
+    height: 15vw;
+  }
+
+  .aboutme-info p {
+    line-height: 20px;
+    text-align: left;
+    font-size: 1.3vw;
+  }
+  .projects {
+    max-width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .projects article {
+    min-width: 40px;
+  }
+  
 }
