@@ -6,7 +6,14 @@ MediaQueries:
     Para móvil - No hay MediaQueries
     Móviles en horizontal - min-width: 768px
     Tablets en horizontal y escritorio - min-width: 1024px
-    Escritorios muy anchos - min-width: 1200px 
+    Escritorios muy anchos - min-width: 1200px
+
+    Móvil pequeño: 360 x 640 px.
+    Móvil medio: 375 x 667 px.
+    Smartphone grande: 720 x 1280 px.
+    Ordenador portátil medio: 1366 x 768 px.
+    Ordenador de escritorio medio: 1440 x 900 px.
+    PC de escritorio grande: 1920 x 1080 px.
 */
 
 :root {
@@ -104,8 +111,7 @@ nav a:hover {
 }
 
 .aboutme-info img {
-    width: 150px;
-    height: 150px;
+    width: 65vw;
     border-radius: 1000px;
 }
 
@@ -132,21 +138,85 @@ nav a:hover {
     display: flex;
         justify-content: center;
         align-items: center;
-        min-width: 300px;
+        min-width: 90vw;
         min-height: 300px;
     background-color: wheat;
 }
 
-
-
 @media screen and (min-width: 425px) {
+    .aboutme-info img {
+        height: 50vw;
+        width: 50vw;
+    }
     .hero-section {
         line-height: 9vw;
     }
 }
 
 @media screen and (min-width: 768px) {
+    .aboutme-info img {
+        height: 60vw;
+        width: 60vw;
+    }
+
+    .aboutme-info p {
+        font-size: 3vw;
+    }
     .hero-section {
         line-height: 10vw;
+    }
+
+    .projects{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .projects article {
+        min-width: 45vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hero-section {
+        line-height: 4vw;
+    }
+    .hero-section h2 {
+        font-size: 4vw;
+    }
+    .hero-section span{
+        font-size: 1.5vw;
+    }
+    .hero-section .nombre {
+        font-size: 4vw;
+        display: inline;
+    }
+    
+    .aboutme h2 {
+        font-size: 3vw;
+    }
+
+    .aboutme-info{
+        padding: 100px 0px;
+        width: 80%;
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .aboutme-info img {
+        height: 15vw;
+    }
+
+    .aboutme-info p {
+        line-height: 20px;
+        text-align: left;
+        font-size: 1.3vw;
+    }
+
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .projects article {
+        min-width: 30vw;
+        min-height: 30vw;
     }
 }
