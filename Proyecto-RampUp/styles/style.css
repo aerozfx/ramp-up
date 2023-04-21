@@ -42,18 +42,18 @@ MediaQueries:
 header {
   width: 100%;
   position: fixed;
-  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid var(--light-gray);
 }
 
 header nav {
   display: flex;
   justify-content: center;
   gap: 30px;
+  
 }
 
 header nav a {
@@ -88,6 +88,24 @@ nav a:hover {
   line-height: 10vw;
 }
 
+.hero-section {
+    background: radial-gradient(circle at top,#231c1e,#245ac5,#476bb5,#fc814a);
+    background-size: 240% 240%;
+    animation: gradient-animation 30s ease infinite
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .hero-section h2 {
   font-size: 7vw;
   user-select: none;
@@ -112,7 +130,7 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  background-color: aqua;
+  background-color: var(--primary-white);
   padding: 30px 20px;
 }
 
@@ -129,6 +147,21 @@ nav a:hover {
 .aboutme-info img {
   width: 65vw;
   border-radius: 1000px;
+}
+
+.button{
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  background-color: var(--light-gray);
+  border-radius: 20px;
+  border: 1px solid var(--darker-gray);
+}
+
+.button a {
+  color: var(--primary-black);
+  text-decoration: none;
 }
 
 .portfolio {
@@ -306,11 +339,11 @@ article .project-info {
 
   .projects article:hover .project-decoration {
     opacity: 1;
-    animation: moverCosa 0.3s ease;
+    animation: moveDecoration 0.3s ease;
   }
 }
 
-@keyframes moverCosa {
+@keyframes moveDecoration {
   0% {
     transform: translateY(30px);
 
