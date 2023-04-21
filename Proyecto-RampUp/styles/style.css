@@ -90,10 +90,12 @@ nav a:hover {
 
 .hero-section h2 {
   font-size: 7vw;
+  user-select: none;
 }
 
 .hero-section span {
   font-size: 4vw;
+  user-select: none;
 }
 
 .hero-section .nombre {
@@ -174,6 +176,12 @@ article .project-info {
   align-items: center;
 }
 
+.project-decoration {
+    opacity: 0;
+    padding: 0px 5px;
+    font-size: 24px
+}
+
 @media screen and (min-width: 425px) {
   .hero-section {
     line-height: 9vw;
@@ -231,6 +239,10 @@ article .project-info {
 }
 
 @media screen and (min-width: 1024px) {
+    .title{
+        font-size:3vw;
+        margin-bottom: 2vw;
+    }
   .hero-section {
     line-height: 4vw;
   }
@@ -272,9 +284,31 @@ article .project-info {
     max-width: 90%;
     grid-template-columns: repeat(3, 1fr);
   }
-
   .projects article {
     min-width: 40px;
+    cursor: pointer;
   }
-  
+
+  .project-info{
+    position: relative;
+  }
+
+  .project-decoration {
+    transition: all .5s ease-in-out;
+  }
+
+  .projects article:hover .project-decoration{
+    opacity: 1;
+    animation: moverCosa 0.3s ease;
+  }
+}
+
+@keyframes moverCosa {
+    0% {
+        transform: translateY(30px);
+
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
