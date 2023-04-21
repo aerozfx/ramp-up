@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/icons.css">
   <title>Document</title>
 </head>
 
@@ -13,17 +14,22 @@
   <main>
     <header>
       <nav>
-        <a href="index.html">Home</a>
-        <a href="pages/aboutme.html">Sobre mí</a>
-        <a href="pages/portfolio.html">Portfolio</a>
-        <a href="pages/contact.html">Contacto</a>
+        <a href="#">Home</a>
+        <a href="#aboutme">Sobre mí</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contacto</a>
       </nav>
+      <div class="hamburguer">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
     </header>
     <section class="hero-section">
       <h2>Hola! Soy <span class="nombre">Fernando Mariño</span></h2>
       <span>Desarrollador frontend</span>
     </section>
-    <section class="aboutme">
+    <section class="aboutme" id="aboutme">
       <h2 class="title">Sobre mí</h2>
       <article class="aboutme-info">
         <img src="/Proyecto-RampUp/assets/images/foto-perfil.jfif" alt="">
@@ -35,7 +41,7 @@
         </p>
       </article>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <h2 class="title">Proyectos</h2>
       <section class="projects">
         <article>
