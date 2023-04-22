@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/hamburguer-menu.css" />
-    <link rel="stylesheet" href="styles/mobile-menu.css" />
-    <title>Página web personal - Fernando</title>
-  </head>
 
-  <body>
-    <main>
-      <header>
-        <nav>
-          <a href="#">Home</a>
-          <a href="#aboutme">Sobre mí</a>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#contact">Contacto</a>
-        </nav>
-        <div class="mobile-menu">
-          <div class="hamburguer">
-            <div class="line line-1"></div>
-            <div class="line line-2"></div>
-            <div class="line line-3"></div>
-          </div>
-          <div class="slider">
-            <div class="slider-items">
-              <a href="/Proyecto-RampUp/pages/aboutme.html">Sobre mí</a>
-              <a href="/Proyecto-RampUp/pages/portfolio.html">Portfolio</a>
-              <a href="/Proyecto-RampUp/pages/contact.html">Contacto</a>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/hamburguer-menu.css" />
+  <link rel="stylesheet" href="styles/mobile-menu.css" />
+  <link rel="stylesheet" href="styles/js-linked.css">
+  <title>Página web personal - Fernando</title>
+</head>
+
+<body>
+  <main>
+    <header>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#aboutme">Sobre mí</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+      <div class="mobile-menu">
+        <div class="hamburguer">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+        </div>
+        <div class="slider">
+          <div class="slider-items">
+            <a href="/Proyecto-RampUp/pages/aboutme.html">Sobre mí</a>
+            <a href="/Proyecto-RampUp/pages/portfolio.html">Portfolio</a>
+            <a href="/Proyecto-RampUp/pages/contact.html">Contacto</a>
           </div>
         </div>
-      </header>
-      <section class="hero-section">
-        <h2>Hola! Soy <span class="nombre">Fernando Mariño</span></h2>
-        <span>Desarrollador frontend</span>
-      </section>
-      <section class="aboutme" id="aboutme">
-        <h2 class="title">Sobre mí</h2>
-        <article class="aboutme-info">
-          <img src="/Proyecto-RampUp/assets/images/foto-perfil.jfif" alt="" />
+      </div>
+    </header>
+    <section class="hero-section">
+      <h2>Hola! Soy <span class="nombre">Fernando Mariño</span></h2>
+      <span>Desarrollador frontend</span>
+    </section>
+    <section class="aboutme" id="aboutme">
+      <h2 class="title">Sobre mí</h2>
+      <article class="aboutme-info">
+        <img src="/Proyecto-RampUp/assets/images/foto-perfil.jfif" alt="" />
+        <div class="aboutme-info-text">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
             vehicula erat in lorem gravida tincidunt. Maecenas dolor nunc,
@@ -52,83 +55,92 @@
             condimentum in. Ut efficitur felis quis nulla maximus accumsan.
           </p>
           <div class="button">
-            <a href="/Proyecto-RampUp/pages/aboutme.html"
-              >Ver perfil completo</a
-            >
+            <a href="/Proyecto-RampUp/pages/aboutme.html">
+              Ver perfil completo
+            </a>
           </div>
-        </article>
-      </section>
-      <section class="portfolio" id="portfolio">
-        <h2 class="title">Proyectos</h2>
-        <section class="projects">
-          <article>
-            <img
-              src="/Proyecto-RampUp/assets/images/placeholder-img.jpg"
-              alt=""
-            />
+        </div>
+        <div class="aboutme-info-skills">
+          <div class="skills">
+            <div class="skill" data-tilt>1</div>
+            <div class="skill" data-tilt>2</div>
+            <div class="skill" data-tilt>3</div>
+            <div class="skill" data-tilt>4</div>
+          </div>
+          <div class="button">
+            <a href="/Proyecto-RampUp/pages/aboutme.html">
+              Ver perfil completo
+            </a>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <h2 class="title">Proyectos</h2>
+      <section class="projects">
+        <article>
+          <a href="">
+            <img src="/Proyecto-RampUp/assets/images/placeholder-img.jpg" alt="" />
             <div class="project-info">
               <span class="project-decoration">«</span>Título #1 - Primer
               Proyecto<span class="project-decoration">»</span>
             </div>
-          </article>
-          <article>
-            <img
-              src="/Proyecto-RampUp/assets/images/placeholder-img.jpg"
-              alt=""
-            />
+          </a>
+        </article>
+        <article>
+          <a href="#">
+            <img src="/Proyecto-RampUp/assets/images/placeholder-img.jpg" alt="" />
             <div class="project-info">
               <span class="project-decoration">«</span>Título #2 - Primer
               Proyecto<span class="project-decoration">»</span>
             </div>
-          </article>
-          <article>
-            <img
-              src="/Proyecto-RampUp/assets/images/placeholder-img.jpg"
-              alt=""
-            />
+          </a>
+        </article>
+        <article>
+          <a href="">
+            <img src="/Proyecto-RampUp/assets/images/placeholder-img.jpg" alt="" />
             <div class="project-info">
               <span class="project-decoration">«</span>Título #3 - Primer
               Proyecto<span class="project-decoration">»</span>
             </div>
-          </article>
-          <article>
-            <img
-              src="/Proyecto-RampUp/assets/images/placeholder-img.jpg"
-              alt=""
-            />
+          </a>
+        </article>
+        <article>
+          <a href="">
+            <img src="/Proyecto-RampUp/assets/images/placeholder-img.jpg" alt="" />
             <div class="project-info">
               <span class="project-decoration">«</span>Título #4 - Primer
               Proyecto<span class="project-decoration">»</span>
             </div>
-          </article>
-          <article>
-            <img
-              src="/Proyecto-RampUp/assets/images/placeholder-img.jpg"
-              alt=""
-            />
+          </a>
+        </article>
+        <article>
+          <a href="">
+            <img src="/Proyecto-RampUp/assets/images/placeholder-img.jpg" alt="" />
             <div class="project-info">
               <span class="project-decoration">«</span>Título #5 - Primer
               Proyecto<span class="project-decoration">»</span>
             </div>
-          </article>
-          <article>
-            <img
-              src="/Proyecto-RampUp/assets/images/placeholder-img.jpg"
-              alt=""
-            />
+          </a>
+        </article>
+        <article>
+          <a href="">
+            <img src="/Proyecto-RampUp/assets/images/placeholder-img.jpg" alt="" />
             <div class="project-info">
               <span class="project-decoration">«</span>Título #6 - Primer
               Proyecto<span class="project-decoration">»</span>
             </div>
-          </article>
-        </section>
-        <div class="button">
-          <a href="/Proyecto-RampUp/pages/aboutme.html"
-            >Ver todos los proyectos</a
-          >
-        </div>
+          </a>
+        </article>
       </section>
-    </main>
-    <script src="script/main.js" type="module"></script>
-  </body>
+      <div class="button">
+        <a href="/Proyecto-RampUp/pages/por.html">Ver todos los proyectos</a>
+      </div>
+    </section>
+  </main>
+  <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="script/main.js" type="module"></script>
+  <script src="/node_modules/tilt.js/src/tilt.jquery.js"></script>
+</body>
+
 </html>

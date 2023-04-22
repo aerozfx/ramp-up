@@ -32,3 +32,37 @@ hamburguer.addEventListener("click", () => {
     element.classList.toggle("active")
   })
 })
+
+// Script aboutme
+
+const aboutMeTitle = document.querySelector(".aboutme .title")
+const aboutMeTextSection = document.querySelector(".aboutme-info-text")
+const skills = document.querySelector(".aboutme-info-skills")
+const aboutMeImg = document.querySelector(".aboutme-info img")
+
+const setVisibleItems = () => {
+  if(getWidthClient() > 1024) {
+    aboutMeTitle.innerText = "Habilidades";
+    aboutMeTextSection.classList.add("hidden");
+    skills.classList.add("visible");
+    aboutMeImg.classList.add("hidden");
+  } else {
+    aboutMeImg.classList.remove("hidden")
+    skills.classList.remove("visible");
+    aboutMeTextSection.classList.remove("hidden")
+    aboutMeTitle.innerText = "Sobre mí";
+  }
+}
+
+const getWidthClient = () => {
+  return screen.width
+}
+
+window.addEventListener("resize", () => {
+  setVisibleItems()
+})
+
+
+// Perspective transform based on mouse movement
+
+

@@ -29,3 +29,8 @@
     color: var(--primary-white)
 }
 
+@media screen and (min-width: 425px) {
+    .slider {
+        display: none;
+    }
+}
