@@ -126,6 +126,8 @@ nav a:hover {
   font-family: "Lobster", sans-serif;
 }
 
+/* Estilos aboutme section */
+
 .aboutme {
   min-height: 100vh;
   display: flex;
