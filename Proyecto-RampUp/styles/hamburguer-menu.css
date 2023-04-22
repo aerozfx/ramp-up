@@ -1,0 +1,32 @@
+.hamburguer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    transition: all 0.3s;
+    z-index: 999;
+}
+
+.line {
+    width: 15px;
+    height: 2px;
+    background-color: var(--primary-black);
+    transform-origin: 0px 100%;
+    transition: all 0.3s;
+}
+
+.active.line-1 {
+    background-color: var(--primary-white);
+    transform: rotate(45deg) translate(-1px);
+}
+
+.active.line-2 {
+    background-color: var(--primary-white);
+    opacity: 0;
+    transform: scale(0);
+}
+
+.active.line-3{
+    background-color: var(--primary-white);
+    transform: rotate(-45deg);
+}

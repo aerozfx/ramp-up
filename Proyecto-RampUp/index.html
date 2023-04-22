@@ -1,80 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/hamburguer-menu.css" />
+    <link rel="stylesheet" href="styles/mobile-menu.css" />
+    <title>Página web personal - Fernando</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/style.css">
-  
-  <title>Document</title>
-</head>
-
-<body>
-  <main>
-    <header>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#aboutme">Sobre mí</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contacto</a>
-      </nav>
-      <div class="hamburguer">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-    </header>
-    <section class="hero-section">
-      <h2>Hola! Soy <span class="nombre">Fernando Mariño</span></h2>
-      <span>Desarrollador frontend</span>
-    </section>
-    <section class="aboutme" id="aboutme">
-      <h2 class="title">Sobre mí</h2>
-      <article class="aboutme-info">
-        <img src="/Proyecto-RampUp/assets/images/foto-perfil.jfif" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula erat in lorem gravida tincidunt.
-          Maecenas dolor nunc, commodo ac nibh sit amet, tincidunt vulputate risus. Proin dictum ligula fermentum risus
-          pharetra, quis vulputate quam porta. Sed a pretium libero. Morbi ac felis pulvinar, vehicula odio in, mollis
-          turpis. Nam finibus nulla tortor, sollicitudin consequat eros condimentum in. Ut efficitur felis quis nulla
-          maximus accumsan.
-        </p>
-      </article>
-      <div class="button">
-        <a href="/Proyecto-RampUp/pages/aboutme.html">Ver perfil completo</a>
-      </div>
-    </section>
-    <section class="portfolio" id="portfolio">
-      <h2 class="title">Proyectos</h2>
-      <section class="projects">
-        <article>
-          <img src="/Proyecto-RampUp/assets/images/placeholder-img.jpg" alt="">
-          <div class="project-info"><span class="project-decoration">«</span>Título #1 - Primer Proyecto<span class="project-decoration">»</span></div>
-          </article>
-          <article>
-            <img src="/Proyecto-RampUp/assets/images/placeholder-img.jpg" alt="">
-            <div class="project-info"><span class="project-decoration">«</span>Título #2 - Primer Proyecto<span class="project-decoration">»</span></div>
-          </article>
-          <article>
-            <img src="/Proyecto-RampUp/assets/images/placeholder-img.jpg" alt="">
-            <div class="project-info"><span class="project-decoration">«</span>Título #3 - Primer Proyecto<span class="project-decoration">»</span></div>
-          </article>
-          <article>
-            <img src="/Proyecto-RampUp/assets/images/placeholder-img.jpg" alt="">
-            <div class="project-info"><span class="project-decoration">«</span>Título #4 - Primer Proyecto<span class="project-decoration">»</span></div>
-          </article>
-          <article>
-            <img src="/Proyecto-RampUp/assets/images/placeholder-img.jpg" alt="">
-            <div class="project-info"><span class="project-decoration">«</span>Título #5 - Primer Proyecto<span class="project-decoration">»</span></div>
-          </article>
-          <article>
-            <img src="/Proyecto-RampUp/assets/images/placeholder-img.jpg" alt="">
-            <div class="project-info"> <span class="project-decoration">«</span>Título #6 - Primer Proyecto<span class="project-decoration">»</span></div>
+  <body>
+    <main>
+      <header>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#aboutme">Sobre mí</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contacto</a>
+        </nav>
+        <div class="mobile-menu">
+          <div class="hamburguer">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+          </div>
+          <div class="slider">
+            <div class="slider-items">
+              <a href="/Proyecto-RampUp/pages/aboutme.html">Sobre mí</a>
+              <a href="/Proyecto-RampUp/pages/portfolio.html">Portfolio</a>
+              <a href="/Proyecto-RampUp/pages/contact.html">Contacto</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="hero-section">
+        <h2>Hola! Soy <span class="nombre">Fernando Mariño</span></h2>
+        <span>Desarrollador frontend</span>
+      </section>
+      <section class="aboutme" id="aboutme">
+        <h2 class="title">Sobre mí</h2>
+        <article class="aboutme-info">
+          <img src="/Proyecto-RampUp/assets/images/foto-perfil.jfif" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            vehicula erat in lorem gravida tincidunt. Maecenas dolor nunc,
+            commodo ac nibh sit amet, tincidunt vulputate risus. Proin dictum
+            ligula fermentum risus pharetra, quis vulputate quam porta. Sed a
+            pretium libero. Morbi ac felis pulvinar, vehicula odio in, mollis
+            turpis. Nam finibus nulla tortor, sollicitudin consequat eros
+            condimentum in. Ut efficitur felis quis nulla maximus accumsan.
+          </p>
+          <div class="button">
+            <a href="/Proyecto-RampUp/pages/aboutme.html"
+              >Ver perfil completo</a
+            >
+          </div>
         </article>
       </section>
-    </section>
-  </main>
-  <script src="script/main.js" type="module"></script>
-</body>
-
+      <section class="portfolio" id="portfolio">
+        <h2 class="title">Proyectos</h2>
+        <section class="projects">
+          <article>
+            <img
+              src="/Proyecto-RampUp/assets/images/placeholder-img.jpg"
+              alt=""
+            />
+            <div class="project-info">
+              <span class="project-decoration">«</span>Título #1 - Primer
+              Proyecto<span class="project-decoration">»</span>
+            </div>
+          </article>
+          <article>
+            <img
+              src="/Proyecto-RampUp/assets/images/placeholder-img.jpg"
+              alt=""
+            />
+            <div class="project-info">
+              <span class="project-decoration">«</span>Título #2 - Primer
+              Proyecto<span class="project-decoration">»</span>
+            </div>
+          </article>
+          <article>
+            <img
+              src="/Proyecto-RampUp/assets/images/placeholder-img.jpg"
+              alt=""
+            />
+            <div class="project-info">
+              <span class="project-decoration">«</span>Título #3 - Primer
+              Proyecto<span class="project-decoration">»</span>
+            </div>
+          </article>
+          <article>
+            <img
+              src="/Proyecto-RampUp/assets/images/placeholder-img.jpg"
+              alt=""
+            />
+            <div class="project-info">
+              <span class="project-decoration">«</span>Título #4 - Primer
+              Proyecto<span class="project-decoration">»</span>
+            </div>
+          </article>
+          <article>
+            <img
+              src="/Proyecto-RampUp/assets/images/placeholder-img.jpg"
+              alt=""
+            />
+            <div class="project-info">
+              <span class="project-decoration">«</span>Título #5 - Primer
+              Proyecto<span class="project-decoration">»</span>
+            </div>
+          </article>
+          <article>
+            <img
+              src="/Proyecto-RampUp/assets/images/placeholder-img.jpg"
+              alt=""
+            />
+            <div class="project-info">
+              <span class="project-decoration">«</span>Título #6 - Primer
+              Proyecto<span class="project-decoration">»</span>
+            </div>
+          </article>
+        </section>
+        <div class="button">
+          <a href="/Proyecto-RampUp/pages/aboutme.html"
+            >Ver todos los proyectos</a
+          >
+        </div>
+      </section>
+    </main>
+    <script src="script/main.js" type="module"></script>
+  </body>
 </html>
