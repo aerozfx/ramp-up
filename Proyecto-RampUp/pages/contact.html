@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/contacto.css">
+    <link rel="stylesheet" href="../styles/hamburguer-menu.css" />
+    <link rel="stylesheet" href="../styles/mobile-menu.css" />
+    <link rel="stylesheet" href="../styles/js-linked.css" />
     <title>Document</title>
 </head>
+
 <body>
-    <h2>Contact</h2>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#aboutme">Sobre mí</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+        <div class="mobile-menu">
+            <div class="hamburguer">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+            </div>
+            <div class="slider">
+                <div class="slider-items">
+                    <a href="../pages/index.html">Inicio</a>
+                    <a href="../pages/aboutme.html">Sobre mí</a>
+                    <a href="../pages/contact.html">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="contact" id="contact">
+        <div class="contact-items">
+            <div class="contact-img">
+                <img src="../assets/images/foto-form.jpeg" alt="" />
+            </div>
+            <article>
+                <h2 class="title title-contact">Contacto</h2>
+                <form action="">
+                    <label for="name">
+                        <input type="text" name="name" placeholder="Su nombre" />
+                    </label>
+                    <label for="surname">
+                        <input type="text" name="surname" placeholder="Apellidos" />
+                    </label>
+                    <label for="email">
+                        <input type="email" placeholder="tuemail@ejemplo.com" />
+                    </label>
+                    <textarea name="" id="" placeholder="Introduzca aquí su mensaje"></textarea>
+                    <button class="button" type="submit">Enviar</button>
+                </form>
+            </article>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="rrss">
+            <a href="https://github.com/aerozfx"><span>GitHub</span>
+                <a
+                    href="https://www.linkedin.com/in/fernando-marino-guerron-desarrollador-frontend/"><span>LinkedIn</span></a>
+        </div>
+        <div class="copyright">aerozfx &copy; - Fernando Mariño </div>
+    </section>
 </body>
+
 </html>

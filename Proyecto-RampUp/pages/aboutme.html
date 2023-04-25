@@ -4,19 +4,91 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/aboutme.css" />
+    <link rel="stylesheet" href="../styles/about-me.css" />
+    <link rel="stylesheet" href="../styles/mobile-menu.css">
+    <link rel="stylesheet" href="../styles/js-linked.css">
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/hamburguer-menu.css" />
     <title>Document</title>
   </head>
   <body>
-    <h2>Sobre mí</h2>
+    <header>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#aboutme">Sobre mí</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+      <div class="mobile-menu">
+        <div class="hamburguer">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+        </div>
+        <div class="slider">
+          <div class="slider-items">
+            <a href="../pages/index.html">Inicio</a>
+            <a href="../pages/portfolio.html">Portfolio</a>
+            <a href="../pages/contact.html">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </header>
     <section class="main">
-      <img src="assets/images/foto-perfil.jfif" alt="foto de perfil" />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-        assumenda necessitatibus deleniti tempore repudiandae, maiores tenetur
-        dignissimos nobis doloremque animi esse aspernatur qui, veniam, voluptas
-        saepe. Sunt vitae id unde.
-      </p>
+      <h2>Sobre mí</h2>
+      <div class="main-info">
+        <img src="../assets/images/foto-perfil.jfif" alt="foto de perfil" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+          assumenda necessitatibus deleniti tempore repudiandae, maiores tenetur
+          dignissimos nobis doloremque animi esse aspernatur qui, veniam, voluptas
+          saepe. Sunt vitae id unde.
+        </p>
+      </div>
     </section>
+    <section class="skills">
+      <h2>Habilidades técnicas</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <div class="skill-content">
+            <img
+              src="../assets/images/skills/python.png"
+              alt="logo de Python"
+            />
+            <span>Python</span>
+        </div>
+      </div>
+        <div class="skill">
+          <div class="skill-content">
+            <img
+              src="../assets/images/skills/javascript.png"
+              alt="logo de JavaScript"
+            />
+            <span>JavaScript</span>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-content">
+            <img src="../assets/images/skills/css.png" alt="logo de CSS" />
+            <span>CSS</span>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-content">
+            <img src="../assets/images/skills/html.png" alt="logo de HTML" />
+            <span>HTML5</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="rrss">
+        <a href="https://github.com/aerozfx"><span>GitHub</span>
+        <a href="https://www.linkedin.com/in/fernando-marino-guerron-desarrollador-frontend/"><span>LinkedIn</span></a>
+      </div>
+      <div class="copyright">aerozfx &copy; - Fernando Mariño </div>
+    </section>
+    <script src="../script/main.js" type="module"></script>
   </body>
 </html>
